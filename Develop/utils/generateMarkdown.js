@@ -1,6 +1,5 @@
 // function to generate markdown for README
-var fs = require('fs');
-async function generateMarkdown(data) {
+function generateMarkdown(data) {
   let licenseText = "";
   let licenseBadge = "";
   if(data.License === "MIT"){
@@ -11,11 +10,13 @@ async function generateMarkdown(data) {
     licenseText = 'This project is covered under the GNU GPL v3 license'
     licenseBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
     // licenseText = ;
+  }else{
+    licenseText = 'This project does not include a license and therefore cannot be shared or distributed'
+    licenseBadge = "![Unlicensed](https://img.shields.io/badge/License-None-grey)"
   };
 
   return `
   ${licenseBadge}
-  ${myBadge}
 
   # ${data.Title} 
   
