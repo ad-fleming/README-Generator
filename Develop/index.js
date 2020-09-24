@@ -63,7 +63,7 @@ function init() {
         },
         {
             type:"checkbox",
-            choices:["MIT", "Something Else"],
+            choices:["MIT", "GNU GPL v3", "No License"],
             message:questions[6],
             name:"License"
         },
