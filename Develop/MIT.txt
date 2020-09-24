@@ -1,33 +1,4 @@
-
-  [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
-
-  # adsf 
-  
-  ## Description
-  adsf
-
-  ## Table of Contents
-  * [Installation](#Installation)
-  * [Usage](#Usage)
-  * [Contributing](#Contributing)
-  * [Tests](#Tests)
-  * [License](#License)
-  * [Questions](#Questions)
-  
-  ## Installation
-  adsf
-  
-  ## Usage
-  asdf
-
-  ## Contributing
-  asd
-
-  ## Tests
-  fasd
-
-  ## License
-  MIT License
+MIT License
 
     Copyright (c) 
     
@@ -48,9 +19,3 @@
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
-  
-
-  ## Questions
-  If you have any questions, feel free to reach out to me at the following:
-  * Email: 
-  * GitHub: asdf

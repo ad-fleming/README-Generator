@@ -22,14 +22,14 @@ const questions = [
 
 
 // // function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, function(err){
+ function writeToFile(fileName, data) {
+    fs.writeFileSync(fileName, data, function(err){
         if(err) throw err;
     })
 }
 
 // // function to initialize program
-function init() {
+async function init() {
     inquirer.prompt([
         {
             type:"input",
@@ -62,7 +62,7 @@ function init() {
             name:"Tests"
         },
         {
-            type:"checkbox",
+            type:"list",
             choices:["MIT", "GNU GPL v3", "No License"],
             message:questions[6],
             name:"License"
@@ -77,8 +77,8 @@ function init() {
             message:questions[8],
             name:"GitHub"
         },
-    ]).then(function(response){
-        const markdown = generateMarkdown(response);
+    ]).then(async function(response){
+        const markdown = await generateMarkdown(response);
         writeToFile("ReadMe2.md", markdown)
     })
 }
