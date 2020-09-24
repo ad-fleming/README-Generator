@@ -3,16 +3,12 @@ var fs = require('fs');
 async function generateMarkdown(data) {
   let licenseText = "";
   let licenseBadge = "";
-
   if(data.License === "MIT"){
-    const MitData = await fs.readFileSync('MIT.txt', 'utf8')
-    licenseText = MitData
+    licenseText = 'This project is covered under the MIT license.'
     licenseBadge = "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
     // licenseText = ;
   }else if (data.License === "GNU GPL v3"){
-    const GnuData = await fs.readFileSync('GNU.txt', 'utf8')
-    licenseText = GnuData
-    console.log(licenseText);
+    licenseText = 'This project is covered under the GNU GPL v3 license'
     licenseBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
     // licenseText = ;
   };
