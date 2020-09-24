@@ -2,17 +2,19 @@
 function generateMarkdown(data) {
   let licenseText = "";
   let licenseBadge = "";
+  let licenseLink = ""
   if(data.License === "MIT"){
     licenseText = 'This project is covered under the MIT license.'
-    licenseBadge = "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
+    licenseBadge = "[![License: ISC](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/ISC)";
+    licenseLink = "https://choosealicense.com/licenses/mit/"
     // licenseText = ;
   }else if (data.License === "GNU GPL v3"){
-    licenseText = 'This project is covered under the GNU GPL v3 license'
+    licenseText = 'This project is covered under the GNU GPL v3 license.'
     licenseBadge = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
-    // licenseText = ;
+    licenseLink = "https://choosealicense.com/licenses/gpl-3.0/"
   }else{
-    licenseText = 'This project does not include a license and therefore cannot be shared or distributed'
-    licenseBadge = "![Unlicensed](https://img.shields.io/badge/License-None-grey)"
+    licenseText = 'This project does not include a license and therefore cannot be shared, distributed, or modified.'
+    licenseBadge = "![Unlicensed](https://img.shields.io/badge/License-None-grey-black)"
   };
 
   return `
@@ -45,6 +47,8 @@ function generateMarkdown(data) {
 
   ## License
   ${licenseText}
+
+  _You can learn more about this project's license <a href="${licenseLink}">here</a>_
   
 
   ## Questions

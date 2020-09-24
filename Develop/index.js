@@ -44,6 +44,16 @@ const questions =
             message: "What is the title of your Project?",
             choices:["MIT", "GNU GPL v3", "No License"],
             type: "list",
+         },
+         {
+            name:'Email',
+            message: "Please enter your email address.",
+            type: "input",
+         },
+         {
+            name:'GitHub',
+            message: "Please include your GitHub username.",
+            type: "input",
          }
     ]
 
