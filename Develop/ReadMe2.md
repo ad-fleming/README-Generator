@@ -1,10 +1,10 @@
 
   [![License: ISC](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/ISC)
 
-  # README-Generator 
+  # Employee-Management-System 
   
   ## Description
-  This assignment was our first dive into Node. We were required to use NPM to initialize a JSON package and include Inquire as a dependency. From there we designed a command line application that generated a README based on user input
+  This project replicates a simple Employee Management System by linking a SQL Database to a Node CLI application. Using the npm Inquirer package the app takes user inputs to query the database and dynmaically render results to the console. 
 
   ## Table of Contents
   * [Installation](#Installation)
@@ -15,16 +15,16 @@
   * [Questions](#Questions)
   
   ## Installation
-  Given that the appropriate dependencies are listed in the package.json file, a user should be able to run 'npm install' in their command line in order to install everything the need to run the application.
+  To install, run npm install. Once finished, you should see node modules, and a package-lock.json in the directory which contain the dependencies listed in the package.json file.
   
   ## Usage
-  Once installed, the user only needs to run 'node index.js' in order to be given a list of prompts which are then used to generate their markdown file.
+  To start the program, type `node ems.js`. This will bring up the first prompt. From select an option from the list and continue to follow the prompts.
 
   ## Contributing
-  No need!
+  No need
 
   ## Tests
-  At the moment, no tests are available.
+  No tests available at this time
 
   ## License
   This project is covered under the MIT license.
